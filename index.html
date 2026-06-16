@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" style="background:#0D2B1E">
+<html lang="pt-BR" style="background:#061812">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,19 +25,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg:        #0D2B1E;
-      --bg2:       #122A1E;
-      --bg3:       #163520;
-      --border:    #1A3F28;
-      --border2:   #1E4830;
+      --bg:        #061812;
+      --bg2:       #071A0F;
+      --bg3:       #081C10;
+      --border:    #0A2415;
+      --border2:   #0D3018;
       --txt:       #E2E8F5;
       --txt2:      #7E8DB0;
       --txt3:      #4A5578;
-      --accent:    #1DB87A;
-      --green:     #1DB87A;
+      --accent:    #39D353;
+      --green:     #39D353;
       --red:       #E05252;
       --yellow:    #D4952A;
-      --green-bg:  #0E2E20;
+      --green-bg:  #061812;
       --red-bg:    #2E1414;
       --yellow-bg: #2B2010;
       --font:      'Inter', system-ui, sans-serif;
@@ -46,12 +46,12 @@
       --radius-lg: 10px;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { font-size: 14px; scroll-behavior: smooth; background: #0D2B1E; }
-    table, tbody, tbody tr { background: #0D2B1E; }
-    tbody tr:nth-child(even) { background: #0E2218; }
-    tbody tr:hover { background: #122A1E !important; }
-    .table-wrap { background: #0D2B1E; }
-    input, select { background-color: #163520 !important; color: #E2E8F5 !important; }
+    html { font-size: 14px; scroll-behavior: smooth; background: #061812; }
+    table, tbody, tbody tr { background: #061812; }
+    tbody tr:nth-child(even) { background: #050E08; }
+    tbody tr:hover { background: #071A0F !important; }
+    .table-wrap { background: #061812; }
+    input, select { background-color: #081C10 !important; color: #E2E8F5 !important; }
     body { font-family: var(--font); background: var(--bg); color: var(--txt); min-height: 100vh; }
 
     /* ═══════════════════════════════════════
@@ -105,7 +105,7 @@
     .site-header h1 { font-size: 18px; font-weight: 600; color: var(--txt); letter-spacing: -0.02em; }
     .site-header h1 span { color: var(--accent); }
     .site-header p { font-size: 12px; color: var(--txt2); margin-top: 3px; max-width: 500px; line-height: 1.5; }
-    .badge { display: inline-flex; align-items: center; background: #152A1A; border: 1px solid #1C3A22; color: var(--accent); font-size: 11px; padding: 2px 10px; border-radius: 20px; font-weight: 500; margin-left: 8px; }
+    .badge { display: inline-flex; align-items: center; background: #071409; border: 1px solid #0A2010; color: var(--accent); font-size: 11px; padding: 2px 10px; border-radius: 20px; font-weight: 500; margin-left: 8px; }
 
     .controls {
       display: flex; gap: 8px; padding: 12px 20px;
@@ -147,7 +147,7 @@
       background: var(--bg2); white-space: nowrap;
     }
     .chip b { font-weight: 500; }
-    .chip.c-green { border-color: #1C4433; background: var(--green-bg); }
+    .chip.c-green { border-color: #0F4020; background: var(--green-bg); }
     .chip.c-green b { color: var(--green); }
     .chip.c-red { border-color: #401C1C; background: var(--red-bg); }
     .chip.c-red b { color: var(--red); }
@@ -201,7 +201,7 @@
       background: var(--bg3); border: 1px solid var(--border);
       position: relative; overflow: visible;
     }
-    .therm-gradient { position: absolute; inset: 0; border-radius: 4px; background: linear-gradient(to right, #1DB87A44, #D4952A44, #E0525244); }
+    .therm-gradient { position: absolute; inset: 0; border-radius: 4px; background: linear-gradient(to right, #39D35344, #D4952A44, #E0525244); }
     .therm-needle {
       position: absolute; top: 50%; transform: translate(-50%,-50%);
       width: 13px; height: 13px; border-radius: 50%;
@@ -253,7 +253,7 @@
 
     .dcf-box { border-radius: var(--radius); padding: 1rem; margin-top: 0.75rem; border: 1px solid var(--border2); background: var(--bg3); }
     .dcf-therm-track { height: 18px; border-radius: 9px; position: relative; overflow: hidden; margin-top: 10px; }
-    .dcf-therm-bg { position: absolute; inset: 0; background: linear-gradient(to right, #1DB87A 0%, #D4952A 50%, #E05252 100%); opacity: 0.22; }
+    .dcf-therm-bg { position: absolute; inset: 0; background: linear-gradient(to right, #39D353 0%, #D4952A 50%, #E05252 100%); opacity: 0.22; }
     .dcf-needle {
       position: absolute; top: 50%; transform: translate(-50%,-50%);
       width: 22px; height: 22px; border-radius: 50%;
@@ -262,9 +262,9 @@
     }
     .dcf-labels { display: flex; justify-content: space-between; font-size: 10px; color: var(--txt3); margin-top: 5px; }
     .verdict-pill { display: inline-flex; align-items: center; gap: 5px; margin-top: 8px; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 500; }
-    .vp-buy  { background: var(--green-bg); color: var(--green); border: 1px solid #1C4433; }
+    .vp-buy  { background: var(--green-bg); color: var(--green); border: 1px solid #0F4020; }
     .vp-sell { background: var(--red-bg);   color: var(--red);   border: 1px solid #401C1C; }
-    .vp-fair { background: #0E2E20;          color: var(--accent); border: 1px solid #1A2E56; }
+    .vp-fair { background: #061812;          color: var(--accent); border: 1px solid #1A2E56; }
     .modal-btn {
       margin-top: 0.9rem; width: 100%; height: 36px; font-size: 12px;
       border-radius: var(--radius); border: 1px solid var(--border2);
@@ -286,32 +286,32 @@
       .controls, .stats-bar, .legend { padding: 8px 12px; }
       .mgrid { grid-template-columns: 1fr; }
     }
-    .pagination { display:flex; align-items:center; justify-content:space-between; padding:10px 20px; border-top:1px solid #1A3F28; background:#122A1E; flex-wrap:wrap; gap:8px; }
+    .pagination { display:flex; align-items:center; justify-content:space-between; padding:10px 20px; border-top:1px solid #0A2415; background:#071A0F; flex-wrap:wrap; gap:8px; }
     .pagination-info { font-size:11px; color:#4A5578; }
     .pagination-info b { color:#7E8DB0; }
     .page-btns { display:flex; gap:4px; }
-    .page-btn { height:28px; min-width:28px; padding:0 8px; font-size:11px; border-radius:5px; border:1px solid #1E4830; background:#0D2B1E; color:#7E8DB0; cursor:pointer; font-family:'Inter',sans-serif; transition:all 0.15s; }
-    .page-btn:hover:not(:disabled) { background:#163520; color:#E2E8F5; }
-    .page-btn.active { background:#152A1A; border-color:#1DB87A; color:#1DB87A; font-weight:500; }
+    .page-btn { height:28px; min-width:28px; padding:0 8px; font-size:11px; border-radius:5px; border:1px solid #0D3018; background:#061812; color:#7E8DB0; cursor:pointer; font-family:'Inter',sans-serif; transition:all 0.15s; }
+    .page-btn:hover:not(:disabled) { background:#081C10; color:#E2E8F5; }
+    .page-btn.active { background:#071409; border-color:#39D353; color:#39D353; font-weight:500; }
     .page-btn:disabled { opacity:0.3; cursor:not-allowed; }
-    .load-progress { font-size:11px; color:#1DB87A; padding:6px 20px 8px; background:#0D2B1E; border-bottom:1px solid #1A3F28; display:none; }
-    .load-progress-bar { height:3px; background:#1A3F28; margin-top:5px; border-radius:2px; overflow:hidden; }
-    .load-progress-fill { height:100%; background:#1DB87A; border-radius:2px; transition:width 0.3s; width:0%; }
-    .table-topnav { display:flex; align-items:center; justify-content:space-between; padding:7px 12px; background:#122A1E; border-bottom:1px solid #1A3F28; flex-wrap:wrap; gap:6px; }
+    .load-progress { font-size:11px; color:#39D353; padding:6px 20px 8px; background:#061812; border-bottom:1px solid #0A2415; display:none; }
+    .load-progress-bar { height:3px; background:#0A2415; margin-top:5px; border-radius:2px; overflow:hidden; }
+    .load-progress-fill { height:100%; background:#39D353; border-radius:2px; transition:width 0.3s; width:0%; }
+    .table-topnav { display:flex; align-items:center; justify-content:space-between; padding:7px 12px; background:#071A0F; border-bottom:1px solid #0A2415; flex-wrap:wrap; gap:6px; }
     .table-topnav .pagination-info { font-size:11px; color:#4A5578; }
     .table-topnav .pagination-info b { color:#7E8DB0; }
     .table-topnav .page-btns { display:flex; gap:4px; }
   </style>
 </head>
-<body style="background:#0D2B1E;color:#E2E8F5;min-height:100vh">
+<body style="background:#061812;color:#E2E8F5;min-height:100vh">
 <style>
-html,body,div,main,section,table,tbody,tr,td,th,thead { background-color: #0D2B1E !important; color: #E2E8F5; }
-thead th { background-color: #122A1E !important; color: #7E8DB0 !important; }
-tbody tr:hover td { background-color: #122A1E !important; }
-.table-wrap, .controls, .stats-bar, .legend, .site-header, .ad-banner, footer { background-color: #122A1E !important; }
-.controls { background-color: #122A1E !important; }
-.stats-bar { background-color: #0D2B1E !important; }
-input[type=text], select { background-color: #163520 !important; color: #E2E8F5 !important; border-color: #1E4830 !important; }
+html,body,div,main,section,table,tbody,tr,td,th,thead { background-color: #061812 !important; color: #E2E8F5; }
+thead th { background-color: #071A0F !important; color: #7E8DB0 !important; }
+tbody tr:hover td { background-color: #071A0F !important; }
+.table-wrap, .controls, .stats-bar, .legend, .site-header, .ad-banner, footer { background-color: #071A0F !important; }
+.controls { background-color: #071A0F !important; }
+.stats-bar { background-color: #061812 !important; }
+input[type=text], select { background-color: #081C10 !important; color: #E2E8F5 !important; border-color: #0D3018 !important; }
 </style>
 
   <!-- ██████████  AD BANNER TOPO  ██████████ -->
@@ -397,7 +397,7 @@ input[type=text], select { background-color: #163520 !important; color: #E2E8F5 
     <div class="table-topnav" id="table-topnav-top">
       <div class="pagination-info" id="pagination-info-top">—</div>
       <div class="page-btns" id="page-btns-top"></div>
-      <select id="per-page-top" onchange="syncPerPage('top')" style="height:26px;font-size:11px;padding:0 6px;border-radius:5px;border:1px solid #1E4830;background:#163520;color:#7E8DB0;cursor:pointer;font-family:'Inter',sans-serif;">
+      <select id="per-page-top" onchange="syncPerPage('top')" style="height:26px;font-size:11px;padding:0 6px;border-radius:5px;border:1px solid #0D3018;background:#081C10;color:#7E8DB0;cursor:pointer;font-family:'Inter',sans-serif;">
         <option value="1">1</option>
         <option value="5">5</option>
         <option value="10">10</option>
@@ -434,7 +434,7 @@ input[type=text], select { background-color: #163520 !important; color: #E2E8F5 
   <div class="pagination" id="pagination">
     <div class="pagination-info" id="pagination-info">—</div>
     <div class="page-btns" id="page-btns"></div>
-    <select id="per-page-bottom" onchange="syncPerPage('bottom')" style="height:28px;font-size:11px;padding:0 6px;border-radius:5px;border:1px solid #1E4830;background:#163520;color:#7E8DB0;cursor:pointer;font-family:'Inter',sans-serif;">
+    <select id="per-page-bottom" onchange="syncPerPage('bottom')" style="height:28px;font-size:11px;padding:0 6px;border-radius:5px;border:1px solid #0D3018;background:#081C10;color:#7E8DB0;cursor:pointer;font-family:'Inter',sans-serif;">
       <option value="1">1 empresa</option>
       <option value="5">5 empresas</option>
       <option value="10">10 empresas</option>
